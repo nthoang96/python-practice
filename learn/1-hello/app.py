@@ -89,7 +89,6 @@ print(abs(-2.9))
 print(math.ceil(2.9))
 print(math.floor(2.9))
 
-"""
 
 # If condition
 is_hot = False
@@ -103,3 +102,58 @@ elif is_cold:
   print("Wear warn clothes")
 else:
   print("It's a lovely day")
+
+# Logical Operators
+has_high_income = True
+has_good_credit = True
+
+if has_high_income and has_good_credit:
+  print('Eligible for Loan')
+
+# or
+# and not
+
+#  Comparison Operators
+temperature = 30
+
+if temperature > 30:
+  print('Hot')
+else:
+  print('Not Hot')
+
+# While Loop
+i = 1
+while i <= 5:
+  print(i * '*')
+  i += 1
+print("Done")
+"""
+
+req = ""
+isStart = False
+while req != 'quit':
+  # req = input()
+  req = input('> ')
+  if req.lower() == 'help':
+    print('''
+      start - to start the car
+      stop - to stop the car
+      quit - to exit
+    ''')
+  elif req.lower() == 'start':
+    if isStart:
+      print('Car is already started')
+    else:
+      isStart = True
+      print('Car started...Ready to go!')
+  elif req.lower() == 'stop':
+    if not isStart:
+      print('Car is readly stopped')
+    else:
+      isStart = False
+      print('Car stopped.')
+  elif req.lower() == 'quit':
+    break 
+  else:
+    print("I don't understand that")
+  
