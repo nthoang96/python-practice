@@ -22,3 +22,9 @@ def dispatch_dict(operator, x, y):
   }.get(operator, lambda: None)()
 
 print(dispatch_dict('add', 1, 1))
+
+
+a = {'a': 1, 'b': 2}
+b = {'b': 3, 'c': 4}
+z = {**a, **b}
+print(z)
