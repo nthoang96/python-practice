@@ -10,7 +10,7 @@ class Query(ObjectType):
 
   def resolve_hello(self, info, name):
     return f'Hello {name}!'
-  
+
   def resolve_goodbye(self, info):
     return 'See ya!'
 
@@ -20,3 +20,7 @@ schema = Schema(query=Query)
 def hello():
   data = json.loads(request.data)
   return json.dumps(schema.execute(data['query']).data)
+
+if __name__=="__main__":
+    app.run()
+

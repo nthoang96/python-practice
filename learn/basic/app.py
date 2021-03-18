@@ -55,7 +55,7 @@ print(course[:])
 
 first = 'Mark'
 last = 'Nguyen'
-msg = f'{first} [{last}] is a coder' 
+msg = f'{first} [{last}] is a coder'
 print(msg)
 
 # Python String
@@ -71,7 +71,7 @@ print(course.title())
 # Arithmetic Operations
 # Interger 10
 # Float 10.123
-# + - * / // % ** 
+# + - * / // % **
 
 # Operator Precedence
 # level 1: ()
@@ -152,7 +152,7 @@ while req != 'quit':
       isStart = False
       print('Car stopped.')
   elif req.lower() == 'quit':
-    break 
+    break
   else:
     print("I don't understand that")
 
@@ -215,7 +215,7 @@ print(matrix[0][1])
 for row in matrix:
   for item in row:
     print(item)
-  
+
 numbers = [5, 2, 1, 7, 4]
 numbers.append(13)
 numbers.insert(0, 20) # index, value
@@ -411,7 +411,7 @@ from pathlib import Path
 # Absolute path
 # /user/local/bin
 # Relative path
-# 
+#
 
 path = Path("emails")
 print(path.exists())
@@ -430,7 +430,7 @@ print(list(path.glob('*.py')))
 
 """
 """
-Steps: 
+Steps:
   1. Import the Data
   2. Clean the Data
   3. Split the Data into Training/Test Sets
